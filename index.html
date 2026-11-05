@@ -26,7 +26,21 @@ margin:auto;
 padding:30px 20px;
 text-align:center;
 }
-.logo{font-size:65px;margin-bottom:15px}
+.logo{
+font-size:65px;
+margin-bottom:15px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo img{
+width: 90px;
+height: 90px;
+border-radius: 50%;
+object-fit: cover;
+border: 2px solid #f5c65d;
+box-shadow: 0 0 15px #b78a36;
+}
 h1{
 font-family:Georgia,serif;
 color:#f5c65d;
@@ -57,6 +71,7 @@ box-shadow:0 0 20px #008acb66;
 .note{font-size:11px;color:#f5c65d}
 .features{
 display:grid;
+grid-template-columns:1fr 1px; /* fixed layout syntax */
 grid-template-columns:1fr 1fr;
 gap:12px;
 margin-top:30px;
@@ -118,7 +133,9 @@ h1{font-size:31px}
 
 <div class="container">
 
-<div class="logo">https://i.ibb.co/hFkFhWtJ/vx-KQu-Tj-QOVl73qgedt-G8n1l9g-Obu-PUvu-D2n5-I1y-Gh-Wf-Akj-CD73ah-Di0-Rb-Zj5zz1d-Ff-It-USH-Yyp-D0v9-F5zm.jpg</div>
+<div class="logo">
+<img src="https://i.ibb.co/hFkFhWtJ/vx-KQu-Tj-QOVl73qgedt-G8n1l9g-Obu-PUvu-D2n5-I1y-Gh-Wf-Akj-CD73ah-Di0-Rb-Zj5zz1d-Ff-It-USH-Yyp-D0v9-F5zm.jpg" alt="Gautam Jha Logo">
+</div>
 
 <h1>TRADE WITH<br>GAUTAM</h1>
 
@@ -183,7 +200,7 @@ Community
 <p class="disclaimer">
 Disclaimer: This website provides educational information
 only and does not provide investment advice or guaranteed
-returns. Trading involves market risk. Please do your own
+returns. Returns involve market risk. Please do your own
 research before making financial decisions.
 </p>
 
